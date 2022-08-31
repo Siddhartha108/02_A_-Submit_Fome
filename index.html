@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to traval desk.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- ****Alert**** -->
+    <div class="alert alert-success alert-dismissible fade " id="success" role="alert">
+        <strong>Success!</strong> Youer request successfilly submited.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+      <div class="alert alert-danger alert-dismissible fade " id="failure" role="alert">
+        <strong>Error!</strong> Plese try again.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <div class="container">
+        <h1>Travel Desk!</h1>
+        <!-- ****Fome**** -->
+        <div class="form-group mb-3">
+            <label for="name" class="form-label">User name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <small id="namevalid" class="form-text text-muted invalid-feedback">
+            your name must be 0-20 characther long & should not start with with a number
+            </small>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="email">Email address</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter your email">
+            <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                 Envalid email.plese enter a valid email
+                </small>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="car">Select your car</label>
+            <select class="form-select" id="car">
+                <option value="1">Swift</option>
+                <option value="2">Omni</option>
+                <option value="3">K10</option>
+                <option value="3">Ford</option>
+              </select>
+          </div>
+          <div class="form-group my-3">
+            <label for="address">Enter your address</label>
+            <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+          </div>
+          <div class="form-group mb-3">
+            <label for="phone">Enter your phone number</label>
+            <input class="form-control" name="phone" id="phone" rows="3">
+            <small id="phonevalid" class="form-text text-muted invalid-feedback">
+                This phone number is not valid.Plese enter a valid phone number
+               </small>
+          </div>
+
+          <!-- *****button**** -->
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" id="submit" type="button">Submit</button>
+          </div>
+
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
